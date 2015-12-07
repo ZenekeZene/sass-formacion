@@ -1,0 +1,30 @@
+/* NAVEGACION (navegacion.scss) */
+@import "_colors.scss";
+
+nav {
+  padding-top: 20px;
+  background-color: $color-secundario;
+  height: 50px;
+  z-index: 1;
+
+  ul {
+    outline: 1px solid $color-primario;
+    width: 100%;
+
+    @for $i from 1 through 5 {
+        li:nth-child(#{$i}):before {
+          content: '#{$i}.- ';
+        }
+    }
+
+    li {
+      display: inline;
+      padding: 20px;
+      width: 20%;
+      outline: 1px solid green;
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

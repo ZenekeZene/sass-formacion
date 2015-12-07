@@ -1,0 +1,33 @@
+/* FOOTER (footer.scss) */
+/* line 3, ../sass/footer.scss */
+footer {
+  width: 100%;
+  background-color: black;
+  height: 200px;
+}
+/* line 10, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+footer html, footer body {
+  height: 100%;
+}
+/* line 12, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+footer #root {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -54px;
+}
+/* line 18, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+footer #root #root_footer {
+  height: 54px;
+}
+/* line 20, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+footer #footer {
+  clear: both;
+  position: relative;
+  height: 54px;
+}
+/* line 8, ../sass/footer.scss */
+footer p, footer a, footer span {
+  color: white;
+}

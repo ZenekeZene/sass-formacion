@@ -1,0 +1,216 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* GENERAL */
+/* line 11, ../sass/screen.scss */
+body {
+  font-family: Helvetica;
+  font-size: 16px;
+}
+
+/* line 18, ../sass/screen.scss */
+a {
+  color: black;
+  text-decoration: none;
+}
+/* line 21, ../sass/screen.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 26, ../sass/screen.scss */
+section {
+  width: 80%;
+  margin: 0 auto;
+  outline: 1px solid green;
+  box-sizing: border-box;
+  padding: 20px;
+  min-height: 500px;
+  max-width: 500px;
+}
+/* line 34, ../sass/screen.scss */
+section h3 {
+  font: 30px;
+  font-weight: 900;
+  font-color: red;
+}
+/* line 41, ../sass/screen.scss */
+section p {
+  margin-top: 30px;
+}
+
+/* CABECERA (cabecera.scss)*/
+/* line 4, ../sass/cabecera.scss */
+header {
+  display: table;
+  width: 100%;
+  background-color: red;
+  height: 100px;
+  z-index: -1;
+  -webkit-box-shadow: red 2px 2px 10px;
+  -moz-box-shadow: red 2px 2px 10px;
+  box-shadow: red 2px 2px 10px;
+}
+/* line 12, ../sass/cabecera.scss */
+header h1 {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+/* line 19, ../sass/cabecera.scss */
+header h1 a {
+  text-decoration: none;
+  color: white;
+}
+/* line 22, ../sass/cabecera.scss */
+header h1 a:hover {
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+/* NAVEGACION (navegacion.scss) */
+/* line 4, ../sass/navegacion.scss */
+nav {
+  padding-top: 20px;
+  background-color: #ffeaea;
+  height: 50px;
+  z-index: 1;
+}
+/* line 10, ../sass/navegacion.scss */
+nav ul {
+  outline: 1px solid red;
+  width: 100%;
+}
+/* line 15, ../sass/navegacion.scss */
+nav ul li:nth-child(1):before {
+  content: "1.- ";
+}
+/* line 15, ../sass/navegacion.scss */
+nav ul li:nth-child(2):before {
+  content: "2.- ";
+}
+/* line 15, ../sass/navegacion.scss */
+nav ul li:nth-child(3):before {
+  content: "3.- ";
+}
+/* line 15, ../sass/navegacion.scss */
+nav ul li:nth-child(4):before {
+  content: "4.- ";
+}
+/* line 15, ../sass/navegacion.scss */
+nav ul li:nth-child(5):before {
+  content: "5.- ";
+}
+/* line 20, ../sass/navegacion.scss */
+nav ul li {
+  display: inline;
+  padding: 20px;
+  width: 20%;
+  outline: 1px solid green;
+}
+/* line 25, ../sass/navegacion.scss */
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER (footer.scss) */
+/* line 3, ../sass/footer.scss */
+footer {
+  width: 100%;
+  background-color: black;
+  height: 200px;
+}
+/* line 10, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+footer html, footer body {
+  height: 100%;
+}
+/* line 12, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+footer #root {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -54px;
+}
+/* line 18, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+footer #root #root_footer {
+  height: 54px;
+}
+/* line 20, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+footer #footer {
+  clear: both;
+  position: relative;
+  height: 54px;
+}
+/* line 8, ../sass/footer.scss */
+footer p, footer a, footer span {
+  color: white;
+}

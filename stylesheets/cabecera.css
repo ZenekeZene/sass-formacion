@@ -1,0 +1,30 @@
+/* CABECERA (cabecera.scss)*/
+/* line 4, ../sass/cabecera.scss */
+header {
+  display: table;
+  width: 100%;
+  background-color: red;
+  height: 100px;
+  z-index: -1;
+  -webkit-box-shadow: red 2px 2px 10px;
+  -moz-box-shadow: red 2px 2px 10px;
+  box-shadow: red 2px 2px 10px;
+}
+/* line 12, ../sass/cabecera.scss */
+header h1 {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+/* line 19, ../sass/cabecera.scss */
+header h1 a {
+  text-decoration: none;
+  color: white;
+}
+/* line 22, ../sass/cabecera.scss */
+header h1 a:hover {
+  text-decoration: underline;
+  font-weight: 900;
+}

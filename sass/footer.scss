@@ -1,0 +1,11 @@
+/* FOOTER (footer.scss) */
+@import "compass/layout/sticky-footer";
+footer {
+  width: 100%;
+  background-color: black;
+  height: 200px;
+  @include sticky-footer(54px);
+  p, a, span {
+    color: white;
+  }
+}

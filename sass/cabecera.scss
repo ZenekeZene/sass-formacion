@@ -1,0 +1,29 @@
+/* CABECERA (cabecera.scss)*/
+@import "compass/css3";
+@import "_colors.scss";
+header {
+  display: table;
+  width: 100%;
+  background-color: $color-primario;
+  height: 100px;
+  z-index: -1;
+  @include box-shadow(red 2px 2px 10px);
+
+  h1 {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+
+    a {
+      text-decoration: none;
+      color: white;
+      &:hover {
+        text-decoration: underline;
+        font-weight: 900;
+      }
+    }
+  }
+
+}

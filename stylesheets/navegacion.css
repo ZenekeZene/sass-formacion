@@ -1,0 +1,44 @@
+/* NAVEGACION (navegacion.scss) */
+/* line 4, ../sass/navegacion.scss */
+nav {
+  padding-top: 20px;
+  background-color: #ffeaea;
+  height: 50px;
+  z-index: 1;
+}
+/* line 10, ../sass/navegacion.scss */
+nav ul {
+  outline: 1px solid red;
+  width: 100%;
+}
+/* line 15, ../sass/navegacion.scss */
+nav ul li:nth-child(1):before {
+  content: "1.- ";
+}
+/* line 15, ../sass/navegacion.scss */
+nav ul li:nth-child(2):before {
+  content: "2.- ";
+}
+/* line 15, ../sass/navegacion.scss */
+nav ul li:nth-child(3):before {
+  content: "3.- ";
+}
+/* line 15, ../sass/navegacion.scss */
+nav ul li:nth-child(4):before {
+  content: "4.- ";
+}
+/* line 15, ../sass/navegacion.scss */
+nav ul li:nth-child(5):before {
+  content: "5.- ";
+}
+/* line 20, ../sass/navegacion.scss */
+nav ul li {
+  display: inline;
+  padding: 20px;
+  width: 20%;
+  outline: 1px solid green;
+}
+/* line 25, ../sass/navegacion.scss */
+nav ul li a:hover {
+  text-decoration: underline;
+}
