@@ -85,100 +85,187 @@ a:hover {
 }
 
 /* line 26, ../sass/screen.scss */
+#contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* line 34, ../sass/screen.scss */
 section {
-  width: 80%;
-  margin: 0 auto;
+  display: flex-item;
+  max-width: 960px;
+  display: inline-block;
+  line-height: 2;
   outline: 1px solid green;
   box-sizing: border-box;
-  padding: 20px;
-  min-height: 500px;
-  max-width: 500px;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 200px;
+  min-height: 900px;
 }
-/* line 34, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 section h3 {
   font: 30px;
   font-weight: 900;
   font-color: red;
 }
-/* line 41, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 section p {
   margin-top: 30px;
 }
+/* line 58, ../sass/screen.scss */
+section ul {
+  margin: 0 40px;
+  list-style: outside square none;
+}
 
 /* CABECERA (cabecera.scss)*/
-/* line 4, ../sass/cabecera.scss */
+/* line 5, ../sass/cabecera.scss */
 header {
-  display: table;
   width: 100%;
   background-color: red;
   height: 100px;
-  z-index: -1;
-  -webkit-box-shadow: red 2px 2px 10px;
-  -moz-box-shadow: red 2px 2px 10px;
-  box-shadow: red 2px 2px 10px;
+  -webkit-box-shadow: black 2px 2px 5px;
+  -moz-box-shadow: black 2px 2px 5px;
+  box-shadow: black 2px 2px 5px;
+  text-align: left;
 }
 /* line 12, ../sass/cabecera.scss */
+header #logo {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border: 3px solid white;
+  -webkit-border-radius: 300px;
+  -moz-border-radius: 300px;
+  -ms-border-radius: 300px;
+  -o-border-radius: 300px;
+  border-radius: 300px;
+  margin-top: 7px;
+  margin-left: 20px;
+  margin-right: 32px;
+}
+/* line 24, ../sass/cabecera.scss */
+header img {
+  width: 145px;
+  height: 80px;
+  position: relative;
+  left: -27px;
+}
+/* line 31, ../sass/cabecera.scss */
 header h1 {
-  display: table-cell;
-  vertical-align: middle;
+  display: inline-block;
   margin: 0 auto;
   text-align: center;
   color: white;
+  position: relative;
+  bottom: 33px;
 }
-/* line 19, ../sass/cabecera.scss */
+/* line 39, ../sass/cabecera.scss */
 header h1 a {
   text-decoration: none;
   color: white;
 }
-/* line 22, ../sass/cabecera.scss */
+/* line 42, ../sass/cabecera.scss */
 header h1 a:hover {
   text-decoration: underline;
   font-weight: 900;
 }
 
 /* NAVEGACION (navegacion.scss) */
-/* line 4, ../sass/navegacion.scss */
+/* line 8, ../sass/navegacion.scss */
 nav {
-  padding-top: 20px;
   background-color: #ffeaea;
-  height: 50px;
-  z-index: 1;
-}
-/* line 10, ../sass/navegacion.scss */
-nav ul {
-  outline: 1px solid red;
-  width: 100%;
+  width: 220px;
+  height: 800px;
+  display: inline-block;
+  box-sizing: border-box;
 }
 /* line 15, ../sass/navegacion.scss */
+nav h4 {
+  background-color: #000;
+  padding: 22px 0px 0px 20px;
+  color: #FFF;
+  height: 36px;
+}
+/* line 22, ../sass/navegacion.scss */
+nav ul {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+/* line 26, ../sass/navegacion.scss */
 nav ul li:nth-child(1):before {
   content: "1.- ";
 }
-/* line 15, ../sass/navegacion.scss */
+/* line 26, ../sass/navegacion.scss */
 nav ul li:nth-child(2):before {
   content: "2.- ";
 }
-/* line 15, ../sass/navegacion.scss */
+/* line 26, ../sass/navegacion.scss */
 nav ul li:nth-child(3):before {
   content: "3.- ";
 }
-/* line 15, ../sass/navegacion.scss */
+/* line 26, ../sass/navegacion.scss */
 nav ul li:nth-child(4):before {
   content: "4.- ";
 }
-/* line 15, ../sass/navegacion.scss */
+/* line 26, ../sass/navegacion.scss */
 nav ul li:nth-child(5):before {
   content: "5.- ";
 }
-/* line 20, ../sass/navegacion.scss */
-nav ul li {
-  display: inline;
-  padding: 20px;
-  width: 20%;
-  outline: 1px solid green;
+/* line 26, ../sass/navegacion.scss */
+nav ul li:nth-child(6):before {
+  content: "6.- ";
 }
-/* line 25, ../sass/navegacion.scss */
+/* line 26, ../sass/navegacion.scss */
+nav ul li:nth-child(7):before {
+  content: "7.- ";
+}
+/* line 26, ../sass/navegacion.scss */
+nav ul li:nth-child(8):before {
+  content: "8.- ";
+}
+/* line 26, ../sass/navegacion.scss */
+nav ul li:nth-child(9):before {
+  content: "9.- ";
+}
+/* line 26, ../sass/navegacion.scss */
+nav ul li:nth-child(10):before {
+  content: "10.- ";
+}
+/* line 26, ../sass/navegacion.scss */
+nav ul li:nth-child(11):before {
+  content: "11.- ";
+}
+/* line 26, ../sass/navegacion.scss */
+nav ul li:nth-child(12):before {
+  content: "12.- ";
+}
+/* line 31, ../sass/navegacion.scss */
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* line 36, ../sass/navegacion.scss */
 nav ul li a:hover {
-  text-decoration: underline;
+  font-width: 900;
+}
+/* line 39, ../sass/navegacion.scss */
+nav ul li.seleccionado {
+  width: 240px;
+  height: 50px;
+  background-color: red;
+  color: white;
+  -webkit-box-shadow: black 2px 2px 5px;
+  -moz-box-shadow: black 2px 2px 5px;
+  box-shadow: black 2px 2px 5px;
 }
 
 /* FOOTER (footer.scss) */

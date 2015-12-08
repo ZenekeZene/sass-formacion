@@ -1,29 +1,47 @@
 /* NAVEGACION (navegacion.scss) */
+//!Metelo
 @import "_colors.scss";
 
+$width-nav: 220px;
+$desf-selec: 20px;
+
 nav {
-  padding-top: 20px;
   background-color: $color-secundario;
-  height: 50px;
-  z-index: 1;
+  width: $width-nav;
+  height: 800px;
+  display: inline-block;
+  box-sizing: border-box;
+
+  h4 {
+    background-color: #000;
+    padding: 22px 0px 0px 20px;
+    color: #FFF;
+    height: 36px;
+  }
 
   ul {
-    outline: 1px solid $color-primario;
-    width: 100%;
-
-    @for $i from 1 through 5 {
+    margin: 0 auto;
+    box-sizing: border-box;
+    @for $i from 1 through 12 {
         li:nth-child(#{$i}):before {
           content: '#{$i}.- ';
         }
     }
 
     li {
-      display: inline;
+      display: inline-block;
       padding: 20px;
-      width: 20%;
-      outline: 1px solid green;
+      width: 100%;
+      box-sizing: border-box;
       a:hover {
-        text-decoration: underline;
+        font-width: 900;
+      }
+      &.seleccionado {
+        width: $width-nav + $desf-selec;
+        height: 50px;
+        background-color: $color-primario;
+        color: white;
+        @include box-shadow(black 2px 2px 5px);
       }
     }
   }

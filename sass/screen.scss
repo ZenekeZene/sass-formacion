@@ -23,14 +23,27 @@ a {
   }
 }
 
+#contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 section {
-  width: 80%;
-  margin: 0 auto;
+  display: flex-item;
+  $padding-lados: 50px;
+  max-width: 960px;
+  display: inline-block;
+  line-height: 2;
   outline: 1px solid green;
   box-sizing: border-box;
-  padding: 20px;
-  min-height: 500px;
-  max-width: 500px;
+  padding-top: 100px;
+  padding-left: $padding-lados;
+  padding-right: $padding-lados;
+  padding-bottom: 200px;
+  min-height: 900px;
   h3 {
     font: 30px {
       weight: 900;
@@ -41,9 +54,13 @@ section {
   p {
     margin-top: 30px;
   }
+
+  ul {
+    margin: 0 40px;
+    list-style: outside square none;
+  }
 }
 
 @import "cabecera";
 @import "navegacion";
-@import "reglas-anidadas";
 @import "footer";
